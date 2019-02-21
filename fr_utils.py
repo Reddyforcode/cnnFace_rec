@@ -194,11 +194,11 @@ def res(img):
         newim[:,:,x] = img[x,:,:]
     return newim
 
-def img_to_encoding(image_path, model):
-    img1 = cv2.imread(image_path, 1)
-    print(image_path, "shape: ", np.shape(img1))
+def img_to_encoding(image, model):
+    img1 =image
+    #print(image_path, "shape: ", np.shape(img1))
     img1 = cv2.resize(img1, (96, 96))
-    print(image_path, "shape Reconstruido: ", np.shape(img1))
+    #print(image_path, "shape Reconstruido: ", np.shape(img1))
     #image_path =image_path+"test.jpg"
     #cv2.imwrite(image_path, img1)
 
